@@ -1,9 +1,0 @@
-So each thread has a list of donators and recipient. You must add this.
-Each thread can have one recipient, but should only record one donator, its first donator.
-when priorities are donated,
-they swap priorities to allow the recipient to run if it should
-be running at the given time. 
-after the lock is released, the priority is swapped back and the recipient's spot is cleared.
-Nested donation works like this: if the recipient has a recipient, donate to the recipient's recipient.
-in nested donation give the prioirity back to the thread that donated first.
-(this allows for recurive simplicity and infinite expansion of processes)
