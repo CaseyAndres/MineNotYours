@@ -1,0 +1,13 @@
+Fleshing out the prioritization methodology:
+DONATION:
+add sleeper as current's recipient.
+if sleeper has a recipient
+   donate to sleeper's recipient(recursive call)
+add current to sleeper's donators list in the first slot.
+
+swap priorities.
+reschedule.
+UNDONATION:
+while lock's holder has something in its donator's list, swap priorities with the thread in the first slot, and then remove
+it
+release the lock.
